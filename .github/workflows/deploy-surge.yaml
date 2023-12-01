@@ -21,8 +21,9 @@ jobs:
     environment: production
     runs-on: ubuntu-latest
     defaults:
-      shell: bash
-      working-directory: ./
+      run:
+        shell: bash
+        working-directory: ./
     steps:
       # Récupération du code du projet (= git clone)
       - name: Fetch code
