@@ -41,4 +41,4 @@ jobs:
       - name: Deploy to Surge
         run: |
           npm install -g surge
-          surge ./dist react-avec-poulette.surge.sh/
+          surge ./dist --domain ${{ secrets.SURGE_DOMAIN }} --token ${{ secrets.SURGE_TOKEN }}
